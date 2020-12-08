@@ -1,0 +1,151 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style>
+		.app{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<p class="app">Hello how are you !</p>
+</div>
+<script>
+	$(document).ready(function(){
+		$('.app').css("color", "white").css("font-size","40px").css("border","2px solid black");
+		$('#app').html("<h1>Some Where in the earth</h1>");
+
+  var txt1 = "<p>Text.</p>";               // Create element with HTML 
+  var txt2 = $("<p></p>").text("Text.");   // Create with jQuery
+  var txt3 = document.createElement("p");  // Create with DOM
+  txt3.innerHTML = "Text.";
+  $("body").append(txt1, txt2, txt3);      // Append the new elements
+
+	})
+</script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To do list</title>
+      <link rel="stylesheet" href=  
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+      
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style >
+		
+
+body {
+font: normal normal 13px/16px "Open Sans", sans-serif;
+background: #161117;
+}
+
+.container{
+padding: 20px;
+width: 300px;
+margin: 0 auto;
+margin-top: 60px;
+background: white;
+border-radius: 5px;}
+
+form {
+display: inline-block;
+}
+
+input{
+padding: 4px 15px 4px 5px;
+}
+
+#button{
+display: inline-block;
+background-color:#fc999b;
+color:#ffffff;
+border-radius: 5px;
+text-align:center;
+margin-top:2px;
+padding: 5px 15px;
+}
+
+#button:hover{
+cursor: pointer;
+opacity: .8;}
+
+ol {padding-left: 20px;}
+
+ol li {padding: 5px;color:#000;}
+
+ol li:nth-child(even){background: #dfdfdf;}
+
+.strike{text-decoration: line-through;}
+
+li:hover{
+  cursor: pointer;
+ }
+ #go{
+    margin-top: 50px;
+    border-bottom: 1px solid #161117;
+    font-size: 20px;
+    padding-bottom: 10px;
+ }
+ #com{
+    margin-top: 50px;
+     border-bottom: 1px solid #161117;
+     font-size: 20px;
+     padding-bottom: 10px;
+ }
+ .sty{
+    display: inline-block;
+background-color:#fc999b;
+color:#ffffff;
+border-radius: 5px;
+text-align:center;
+margin-top:2px;
+padding: 5px 15px;
+outline: none;
+border:none;
+margin-left: 5px;
+font-size: 15px;
+ }
+ .sty:hover{
+    cursor: pointer;
+ }
+
+
+	</style>
+</head>
+
+	<body>
+    
+    <div class="container">
+		<h2>Simple To Do List</h2>
+    <p><em>Add your task here</em></p>
+       
+		<form name="toDoList">
+			<input type="text" id="item" name="ListItem"/>
+		</form>
+    
+		<div id="button">Add</div>
+		<br/>
+        <div id="go">
+            <h3>To Do</h3>
+        <ul></ul>
+        </div>
+		
+        <div id="com">
+             <h3>Complete Task</h3>
+
+        </div>
+      
+      
+    
+    </div>
+   <script type="text/javascript" src="todo.js"></script>
+	</body>
+
+</html>
